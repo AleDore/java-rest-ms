@@ -15,7 +15,6 @@ public class TestAfterStartup {
 
     @EventListener(ApplicationReadyEvent.class)
     public void runAfterStartup() {
-        System.out.println("Run after startup");
 		var res = apiService.getProfile("AAAAAAAAAAAAAA");
         System.out.println(res);
     }
